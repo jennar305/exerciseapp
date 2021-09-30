@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+  
+  .navbar a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .img {  
+    max-width: 20%;  
+    padding: 0px;
+    height: auto;  
+  }  
+
+  .header
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: none;
+}
+
+  .search
+  {
+    overflow: hidden;
+    background-color: gainsboro;
+    padding: 5px;
+  }
+  .search input[type=text] {
+  float: right;
+  padding: 8px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.search button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 10px;
+  background: aqua;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.title
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.workout-image
+{
+    display:inline-block;
+    margin-right:5px;
+}
+
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title> Workouts </title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="exercise.gif"> 
+                 <img src="exercise.gif"> 
+                </a>
+                    
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': navBarIsActive }" @click="navBarIsActive = !navBarIsActive">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div class="navbar-menu" :class="{ 'is-active': navBarIsActive }">
+              <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                  Home
+                </a>
+          
+                <a class="navbar-item" href="activity.html">
+                  Activity
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link" href="friends.html">
+                      Friends
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item" href="myfriends.html">
+                      My Friends
+                    </a>
+                    <a class="navbar-item" href="searchusers.html">
+                      Search Users
+                    </a>
+                </div>
+                </div>
+                    <a class="navbar-item" href="profile.html">
+                        Profile
+                      </a>
+
+              </div>
+            </div>
+          </nav>
+
+<div class = "content">
+  
+<br>
+<div class = "search"> 
+    <h3 class="heading"> Workouts </h3>
+    <button type="submit">Submit</button>
+    <input type="text" placeholder="Search..">
+</div>
+
+<div class = "add-workout"> 
+
+    <div class ="arms"> 
+       <h3 class="title">Arms </h3> 
+
+        <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+
+          <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+
+          <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+
+          <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+    </div>
+    
+    <br>
+    
+    <div class ="back-and-shoulders"> 
+        <h3 class="title">Back & Shoulders </h3>
+        <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+
+          <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+
+          <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+
+          <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+    </div>
+    
+    <br>
+    
+    <div class ="legs"> 
+        <h3 class="title"> Legs </h3>
+        <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+
+          <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+
+          <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+
+          <figure class="workout-image">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>
+    </div>
+
+</div>
+
+<br>
+
+
+
+
+
+
+
+
+
+</div> 
+          <script src="https://unpkg.com/vue@next"></script>
+<script>
+        
+        const VM = {
+          data() {
+            return {
+              navBarIsActive: false,  
+            }
+          }
+        }
+
+        Vue.createApp(VM).mount('.nav')
+      </script>
+</html>
