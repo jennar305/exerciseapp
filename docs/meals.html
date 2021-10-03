@@ -12,7 +12,7 @@
     padding: 0px;
     height: auto;  
   }  
-
+  
   .header
 {
     font-family: 'Times New Roman', Times, serif;
@@ -50,10 +50,22 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
-.workout-image
+.meal-image
 {
     display:inline-block;
-    margin-right:5px;
+    margin-right:10px;
+}
+
+.figure{
+    display:center;
+    margin-right:10px;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 
   </style>
@@ -62,7 +74,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <title> Workouts </title>
+    <title> Meals </title>
 </head>
 <body>
     <div class="container">
@@ -116,223 +128,209 @@
                       </a>
 
               </div>
-            </div>
           </nav>
 
 <div class = "content">
+    <br>
+    <div class = "search"> 
+        <button type="submit">Submit</button>
+        <input type="text" placeholder="Search">
+    </div>
+    <br>
+    
+Your Daily Calorie Intake
+  <progress class="progress is-link" value="30" max="100">30%</progress>
+
+  <br>
   
-<br>
-<div class = "search"> 
-    <h3 class="heading"> Workouts </h3>
-    <button type="submit">Submit</button>
-    <input type="text" placeholder="Search">
+  <button class="button is-link">Add Meal</button>
 </div>
 
-<div class = "add-workout"> 
+  <div class = "meal-ideas"> 
 
-    <div class ="arms"> 
-       <h3 class="title">Arms </h3> 
+    <div class ="breakfast"> 
+       <h3 class="title">Breakfast </h3> 
 
-        <figure class="workout-image">
+        <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Bicep Curl</figcaption>
+            <figcaption>Avacado Toast</figcaption>
           </figure>
         
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Bench Press</figcaption>
+            <figcaption>Fruit Smoothie</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Tricep Extension</figcaption>
+            <figcaption>Chia Seed Oatmeal</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Reverse Fly</figcaption>
+            <figcaption>Acai Bowl</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Pull Ups</figcaption>
+            <figcaption>Honey Apple Toast</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Push Ups</figcaption>
+            <figcaption>Breakfast Wrap</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Tricep Dips</figcaption>
+            <figcaption>Cinnamon Pankcakes</figcaption>
           </figure>
     </div>
     
     <br>
     
-    <div class ="back-and-shoulders"> 
-        <h3 class="title">Back & Shoulders </h3>
-        <figure class="workout-image">
+    <div class ="lunch"> 
+        <h3 class="title">Lunch</h3>
+        <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Lat Pull Down</figcaption>
+            <figcaption>Mediterranean Grilled Chicken Salad</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Shoulder Press</figcaption>
+            <figcaption>Slow Cooker Split Pea Soup</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Shoulder Shrugs</figcaption>
+            <figcaption>Chicken Lettuce Wraps</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Back Fly</figcaption>
+            <figcaption>Avocado Chicken Salad</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Rows</figcaption>
+            <figcaption>Spicy Salmon Bowl</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Front Extensions</figcaption>
+            <figcaption>Tuna Melt Sandwich</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Lat Pulldown</figcaption>
+            <figcaption>Egg Salad</figcaption>
           </figure>
     </div>
     
     <br>
     
-    <div class ="abs"> 
-        <h3 class="title"> Abs </h3>
-        <figure class="workout-image">
+    <div class ="dinner"> 
+        <h3 class="title"> Dinner </h3>
+        <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Crunches</figcaption>
+            <figcaption>Black Bean Burger</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Sit Ups</figcaption>
+            <figcaption>Lemon Chicken</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Bicycle Crunches</figcaption>
+            <figcaption>Pan-Fried Tilapia</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Russian Twists</figcaption>
+            <figcaption>Italian Sausage Stuffed Zucchini</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Plank</figcaption>
+            <figcaption>Chicken Parm Stuffed Peppers</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Plank Leg Raises</figcaption>
+            <figcaption>Tuscan Butter Roast Chicken</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Scissors</figcaption>
+            <figcaption>Honey Walnut Shrimp</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Reverse Crunch</figcaption>
+            <figcaption>Zucchini Lattice Lasagna</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Cross Crunch</figcaption>
+            <figcaption>Chicken Casserole</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Arm/Leg Raises</figcaption>
+            <figcaption>Cilantro Lime Salmon Bowls</figcaption>
           </figure>
     </div>
 
     <br>
     
-    <div class ="butt"> 
-        <h3 class="title"> Legs & Butt </h3>
-        <figure class="workout-image">
+    <div class ="dessert"> 
+        <h3 class="title"> Dessert </h3>
+        <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Donkey Kicks</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Squats</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Sumo Squats</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Lunges</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Lunges</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Side Legs Raises</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Calf Raise</figcaption>
           </figure>
 
-          <figure class="workout-image">
+          <figure class="meal-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Glute Bridge</figcaption>
           </figure>
-    </div>
 
 </div>
 
-<br>
-
-
-
-
-
-
-
-
+  
 
 </div> 
-          <script src="https://unpkg.com/vue@next"></script>
-<script>
-        
-        const VM = {
-          data() {
-            return {
-              navBarIsActive: false,  
-            }
-          }
-        }
 
-        Vue.createApp(VM).mount('.nav')
-      </script>
+     
 </html>
