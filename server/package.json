@@ -1,0 +1,25 @@
+{
+  "name": "exerciseapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennar305/exerciseapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennar305/exerciseapp/issues"
+  },
+  "homepage": "https://github.com/jennar305/exerciseapp#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  }
+}
