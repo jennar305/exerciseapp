@@ -74,7 +74,7 @@
               <div class="navbar-end">
                 <div class="navbar-item">
                   <div class="buttons">
-                    <a class="button is-link" href="signup.html"></a>
+                    <a class="button is-link" href="signup.html">
                       <strong>Sign up</strong>
                     </a>
                     <a class="button is-link" href="login.html">
@@ -88,6 +88,12 @@
 
 <div class = "content">
   
+  <div class="notification is-link is-light">
+    <button class="delete"></button>
+    Welcome Back @... !
+  </div>
+
+
 Your Daily Progress
   <progress class="progress is-link" value="30" max="100">30%</progress>
 
@@ -100,15 +106,32 @@ Your Daily Progress
 </div> 
           <script src="https://unpkg.com/vue@next"></script>
 <script>
-        
-        const VM = {
-          data() {
-            return {
-              navBarIsActive: false,  
-            }
-          }
-        }
 
-        Vue.createApp(VM).mount('.nav')
-      </script>
+      const VM = {
+          data() {
+              return {
+                  counter: 3,
+                  now: new Date().toLocaleString(),
+                  visible: true,
+                  navBarIsActive: false,
+              }
+          },
+          mounted() {
+              setInterval(() => this.now = new Date().toLocaleString() , 1000)
+          },
+          methods: {
+              grow(){
+                  this.counter += 10;
+              },
+              close(){
+                  this.visible = true;
+              }
+          }
+      }
+
+      Vue.createApp(VM).mount('.container')
+
+    </script>
+
+     
 </html>

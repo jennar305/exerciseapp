@@ -13,6 +13,37 @@
     height: auto;  
   }  
   
+  .profile {
+  max-width: 500px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover, a:hover {
+  opacity: 0.5;
+}
+
+
+
 
   </style>
 <head>
@@ -39,7 +70,7 @@
           
             <div class="navbar-menu" :class="{ 'is-active': navBarIsActive }">
               <div class="navbar-start">
-                <a class="navbar-item" href="index.html">
+                <a class="navbar-item">
                   Home
                 </a>
           
@@ -47,8 +78,12 @@
                   Activity
                 </a>
 
+                <a class="navbar-item" href="workouts.html">
+                  Workouts
+                </a>
+
                 <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link" href="friends.html">
+                  <a class="navbar-link" href="myfriends.html">
                       Friends
                   </a>
           
@@ -69,54 +104,18 @@
             </div>
           </nav>
 
+          <br>
 <div class = "content">
   
-Profile
 
-<div class="card">
-    <div class="card-image">
-      <figure class="image is-4by3">
-        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-      </figure>
-    </div>
-    <div class="card-content">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="media-content">
-          <p class="title is-4">Users Name</p>
-          <p class="subtitle is-6">@username</p>
-        </div>
-      </div>
-  
-      <div class="content">
-        Bio.
-        <br>
-      </div>
-    </div>
+
+  <div class="profile">
+    <img src="https://bulma.io/images/placeholders/128x128.png">
+    <h1> username </h1>
+    <p>Bio</p>
+    
+    <p><button>Edit Profile</button></p>
   </div>
 
 
-
-
-
-
-
-</div> 
-          <script src="https://unpkg.com/vue@next"></script>
-<script>
-        
-        const VM = {
-          data() {
-            return {
-              navBarIsActive: false,  
-            }
-          }
-        }
-
-        Vue.createApp(VM).mount('.nav')
-      </script>
 </html>
