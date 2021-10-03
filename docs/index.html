@@ -97,41 +97,12 @@
 Your Daily Progress
   <progress class="progress is-link" value="30" max="100">30%</progress>
 
-
-
-
-
-
+  <br>
+  
+  <button class="button is-link">Add Workout</button>
+  
 
 </div> 
-          <script src="https://unpkg.com/vue@next"></script>
-<script>
-
-      const VM = {
-          data() {
-              return {
-                  counter: 3,
-                  now: new Date().toLocaleString(),
-                  visible: true,
-                  navBarIsActive: false,
-              }
-          },
-          mounted() {
-              setInterval(() => this.now = new Date().toLocaleString() , 1000)
-          },
-          methods: {
-              grow(){
-                  this.counter += 10;
-              },
-              close(){
-                  this.visible = true;
-              }
-          }
-      }
-
-      Vue.createApp(VM).mount('.container')
-
-    </script>
 
      
 </html>
