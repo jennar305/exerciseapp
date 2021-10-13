@@ -11,9 +11,24 @@
     max-width: 20%;  
     padding: 0px;
     height: auto;  
-  }  
+  } 
   
+  .steps
+  {
+    text-align: center;
+  }
+  
+.steps .message-header
+{
+  text-align: center;
+}
 
+
+.title
+{
+  font-family: 'Times New Roman', Times, serif;
+    
+}
   </style>
 <head>
     <meta charset="UTF-8">
@@ -64,9 +79,6 @@
                     <a class="navbar-item" href="myfriends.html">
                       My Friends
                     </a>
-                    <a class="navbar-item" href="searchusers.html">
-                      Search Users
-                    </a>
                 </div>
                 </div>
                     <a class="navbar-item" href="profile.html">
@@ -79,13 +91,31 @@
 
 <div class = "content">
   
-Your Daily Progress
+Your Daily Progress:
   <progress class="progress is-link" value="30" max="100">30%</progress>
 
-  <button class="button is-link">Add Workout</button>
+  <a href="workouts.html" class= "button is-link">Add Workout</a>
 
+  <br>
+  <br>
 
+  Your Weekly Progress:
+  <progress class="progress is-link" value="30" max="100">30%</progress>
 
+  <div class="steps">
+    <article class="message">
+      <div class="message-header">
+        <p>Total Steps</p>
+        <button class="delete" aria-label="delete"></button>
+      </div>
+      <div class="message-body">
+        <img src="images/steps.png">
+       <h6 class = "title"> Steps </h6> 
+      </div>
+    </article>
+  </div>
+ 
+  </div>
 
 
 </div> 
