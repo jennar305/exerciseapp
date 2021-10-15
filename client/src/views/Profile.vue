@@ -1,6 +1,8 @@
 <template>
   <div class = "content">
-
+<br>
+<br>
+<br>
   <div class="profile">
     <img src="https://bulma.io/images/placeholders/128x128.png">
     <h1> username </h1>
@@ -18,5 +20,39 @@ export default {
 </script>
 
 <style>
+.img {  
+    max-width: 20%;  
+    padding: 0px;
+    height: auto;  
+  }  
+  
+  .profile {
+  max-width: 500px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.button:hover, a:hover {
+  opacity: 0.5;
+}
 
 </style>

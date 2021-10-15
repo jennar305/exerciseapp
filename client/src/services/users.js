@@ -3,7 +3,7 @@ const list = [
         firstName: 'Jenna',
         lastName: 'Rodriguez',
         username: 'jennar305',
-        pic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMo3I5GL9_Zd_LULXRIXTzRLlVESBnoGp8sw&usqp=CAU',
+        pic: '../assets/me.jpg',
         password: 'hi',
         isAdmin: true,
         emails: [
