@@ -8,7 +8,7 @@
           </a>
     </div>
     <div v-else>
-        Hello {{name}} 
+        {{name}} 
     </div>
 </template>
 

@@ -2,7 +2,7 @@ const list = [
     { 
         firstName: 'Jenna',
         lastName: 'Rodriguez',
-        username: 'jennar305',
+        username: 'jenna',
         pic: '../assets/me.jpg',
         password: 'hi',
         isAdmin: true,

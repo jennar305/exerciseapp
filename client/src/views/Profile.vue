@@ -8,15 +8,13 @@
     <h1> username </h1>
     <p>Bio</p>
     
-    <p><button>Edit Profile</button></p>
+    <p><button class="button is-link">Edit Profile</button></p>
   </div>
   </div>
 </template>
 
 <script>
-export default {
 
-}
 </script>
 
 <style>

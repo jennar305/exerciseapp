@@ -4,7 +4,7 @@
   <div class="notification is-link is-light">
     <button class="delete" v-if="!Session.user"></button>
     <div v-else>
-        Welcome Back! @{{this.Session.user.firstName}} 
+        Welcome Back {{this.Session.user.firstName}}!
     </div>
   </div>
 

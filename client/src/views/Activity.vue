@@ -19,7 +19,7 @@ Your Daily Progress:
         <button class="delete" aria-label="delete"></button>
       </div>
       <div class="message-body">
-        <img src="../assets/images/steps.png">
+        <img src="../assets/images/steps.png" width="50" height="50">
        <h6 class = "title"> Steps </h6> 
       </div>
     </article>

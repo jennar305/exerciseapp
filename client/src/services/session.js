@@ -4,10 +4,10 @@ import { Login } from "./users";
 const session = {
     user: null,
     messages: [],
-    toRoute: '/feed',
-    Login(handle, password){
+    toRoute: '/activity',
+    Login(username, password){
 
-        const response = Login(handle, password);
+        const response = Login(username, password);
 
         this.user = response.user;
 
