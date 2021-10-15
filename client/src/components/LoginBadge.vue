@@ -1,27 +1,18 @@
 <template>
-  <div class = "content">
-  
-  <div class="notification is-link is-light">
-    <button class="delete" v-if="!Session.user"></button>
-    <div v-else>
-        Welcome Back! @{{this.Session.user.firstName}} 
+    <div class="buttons" v-if="!Session.user">
+          <a class="button is-link">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-link" @click="login">
+            Log in
+          </a>
     </div>
-  </div>
-
-
-Your Daily Progress
-  <progress class="progress is-link" value="30" max="100">30%</progress>
-
-  <br>
-  
-  <button class="button is-link">Add Workout</button>
-  
-</div> 
-
+    <div v-else>
+        Hello {{name}} 
+    </div>
 </template>
 
 <script>
-
 import Session from "../services/session";
 export default {
     data (){
@@ -41,5 +32,7 @@ export default {
         }
     }
 }
-
 </script>
+
+<style>
+</style>
