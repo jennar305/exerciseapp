@@ -231,16 +231,7 @@ export default {
   font-size: 17px;
 }
 
-.search button {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 10px;
-  background: aqua;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
+
 .title
 {
     font-family: 'Times New Roman', Times, serif;

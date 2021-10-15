@@ -328,7 +328,6 @@ export default {
   background: aqua;
   font-size: 17px;
   border: none;
-  cursor: pointer;
 }
 
 h2{

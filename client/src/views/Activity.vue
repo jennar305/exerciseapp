@@ -4,7 +4,7 @@
 Your Daily Progress:
   <progress class="progress is-link" value="30" max="100">30%</progress>
 
-  <a href="workouts.html" class= "button is-link">Add Workout</a>
+  <a class= "button is-link"> Add Workout </a>
 
   <br>
   <br>
