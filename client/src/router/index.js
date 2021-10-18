@@ -17,31 +17,31 @@ const routes = [
         path: '/activity',
         name: 'Activity',
         component: Activity,
-       // meta: { requiresLogin: true }
+        meta: { requiresLogin: true }
       },
       {
         path: '/workouts',
         name: 'Workouts',
         component: Workouts,
-       // meta: { requiresLogin: true }
+        meta: { requiresLogin: true }
     },
     {
         path: '/meals',
         name: 'Meals',
         component: Meals,
-        //meta: { requiresLogin: true }
+        meta: { requiresLogin: true }
     },
     {
       path: '/friends',
       name: 'Friends',
       component: Friends,
-     // meta: { requiresLogin: true }
+      meta: { requiresLogin: true }
   },
   {
     path: '/profile',
     name: 'Profile',
     component: Profile,
-    //meta: { requiresLogin: true }
+    meta: { requiresLogin: true }
 },
     {
         path: '/login',
