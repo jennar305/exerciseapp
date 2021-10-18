@@ -7,7 +7,7 @@ import Meals from '../views/Meals.vue';
 import Friends from '../views/Friends.vue';
 import Profile from '../views/Profile.vue';
 
-const routes = [
+const routes = [ 
     {
         path: '/',
         name: 'Home',
