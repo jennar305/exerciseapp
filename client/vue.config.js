@@ -1,6 +1,6 @@
 module.exports = {
     //options...
-    outputDir: '.../docs',
-    publicPath: "/docs/" 
+    outputDir: '../docs',
+    publicPath: './' 
 
 }
