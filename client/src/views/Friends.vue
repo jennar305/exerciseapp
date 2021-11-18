@@ -14,13 +14,39 @@
   
 My Friends
 
+<p class="title is-4"> {{post.user.firstName}} {{post.user.lastName}} </p>
+        <p class="subtitle is-6">{{post.user.handle}}</p>
+
+        <div class="post" v-for=" (p, i) in posts" :key="p.src">
+                <post :post="p" @remove="remove(p, i)" />
+            </div>
 </div> 
   </div>
 </template>
 
 <script>
+import Post from '../components/Post.vue';
+import session from "../services/session";
+import { Delete, GetFeed } from "../services/posts";
 export default {
-
+    components: {
+        Post
+    },
+    data: ()=> ({
+        posts: []
+    }),
+    async mounted(){
+        this.posts = await GetFeed(session.user.handle)
+    },
+    methods: {
+        async remove(post, i){
+            console.log({post})
+            const response = await Delete(post.id)
+            if(response.deleted){
+                this.posts.splice(i, 1)
+            }
+        }
+    }
 }
 </script>
 
