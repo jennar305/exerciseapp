@@ -49,7 +49,7 @@ export default {
     }
 }
 </script>
-
+<!--
 <style>
 .img {  
     max-width: 20%;  
@@ -74,3 +74,4 @@ export default {
 
 
 </style>
+------>
