@@ -10,7 +10,8 @@
 
 <div class = "workout" v-for=" (w) in workouts" :key="w.src"> 
 
-    <div class ="arms"> 
+<workouts :new-workout="newWorkout" @add="add()" />
+    <div class ="arms" > 
        <h3 class="title">Arms </h3> 
 
         <figure class="workout-image">
@@ -160,11 +161,6 @@
 
           <figure class="workout-image">
             <img src="https://bulma.io/images/placeholders/128x128.png">
-            <figcaption>Lunges</figcaption>
-          </figure>
-
-          <figure class="workout-image">
-            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Side Legs Raises</figcaption>
           </figure>
 
@@ -187,9 +183,14 @@
 </template>
 
 <script>
+
+import Workouts from '../services/workouts'
 import { GetWorkoutWall } from '../services/workouts'
 import session from '../services/session'
 export default {
+  components: {
+        Workouts
+    },
   data: ()=> ({
     workouts: []
   }),

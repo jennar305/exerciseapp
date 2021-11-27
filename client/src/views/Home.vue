@@ -31,12 +31,14 @@ export default {
     },
     methods: {
         login(){
+            // @ts-ignore
             this.$router.push('/login');
             //this.Session.Login();
         }
     },
     computed:{
         name(){
+            // @ts-ignore
             return this.Session.user.firstName + ' ' + this.Session.user.lastName;
         }
     }
