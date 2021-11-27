@@ -1,18 +1,24 @@
 <template>
- <div class="columns">
-        <div class="column is-one-third is-offset-one-third">
-      <div class="card card5">
+  <div class="card">
   <div class="card-image">
     <figure class="image is-4by3">
       <img :src="post.src" :alt="post.alt">
-      <button class="delete" @click="$emit('remove')"></button>
+        <button class="delete" @click="$emit('remove')"></button>
     </figure>
   </div>
   <div class="card-content">
-    <div class="media media5">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img :src="post.user.pic" alt="Placeholder image">
+        </figure>
+      </div>
       <div class="media-content">
-        <p class="subtitle is-4">{{post.user_handle}}</p>
-        <p class="subtitle is-6"><br>{{post.category}}<br></p>
+        <p class="title is-4"> {{post.user.firstName}} {{post.user.lastName}} </p>
+        <p class="subtitle is-6">
+            {{post.user.handle}}
+                  <time :datetime="post.time">{{prettyDate}}</time>
+        </p>
       </div>
     </div>
 
@@ -20,31 +26,37 @@
       {{post.caption}}
     </div>
   </div>
-  <footer class="card-footer">
-    <a href="#" class="card-footer-item">Like</a>
-    <a href="#" class="card-footer-item">Comment</a>
-    <a href="#" class="card-footer-item">Share</a>
+    <footer class="card-footer">
+        <a href="#" class="card-footer-item">Like</a>
+        <a href="#" class="card-footer-item">Comment</a>
+        <!----<a href="#" class="card-footer-item">Delete</a>--->
   </footer>
-</div>    
-</div> 
 </div>
 </template>
 
 <script>
 export default {
-  props: {
+    props: {
         post: Object
+    },
+    computed: {
+        prettyDate(){
+            // @ts-ignore
+            if(this.post.time && this.post.time.toDateString){
+                return this.post.time.toDateString()
+            }else{
+                return 'Never'
+            }
+            
+        }
     }
 }
 </script>
 
 <style>
-.card5 .media5 p{
-  font-family: 'Times New Roman', Times, serif;
-}
-button.delete{
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
+    button.delete {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
 </style>
