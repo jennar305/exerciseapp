@@ -191,7 +191,7 @@ module.exports.GetAll = function GetAll() { return collection.find().toArray(); 
 
 module.exports.Get = workouts_id => collection.findOne({_id: new ObjectId(workouts_id) });
 
-module.exports.GetTrackWall = function GetTrackWall(handle) {
+module.exports.GetWorkoutsWall = function GetWorkoutsWall(handle) {
     // @ts-ignore
     return collection.aggregate(addOwnerPipeline).match({ user_handle: handle }).toArray();
 }

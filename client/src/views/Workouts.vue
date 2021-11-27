@@ -8,7 +8,7 @@
     <input type="text" placeholder="Search">
 </div>
 
-<div class = "add-workout"> 
+<div class = "workout" v-for=" (w) in workouts" :key="w.src"> 
 
     <div class ="arms"> 
        <h3 class="title">Arms </h3> 
