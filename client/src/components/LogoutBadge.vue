@@ -18,7 +18,4 @@ export default {
 </script>
 
 <style>
-a{
-    margin-right: 10px;
-}
 </style>
