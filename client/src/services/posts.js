@@ -1,7 +1,5 @@
 import { api } from "./myFetch";
 
-
-
 export function GetAll() {
     return api('posts');
 }

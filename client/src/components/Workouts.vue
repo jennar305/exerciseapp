@@ -187,56 +187,21 @@
 </template>
 
 <script>
-import { GetWorkoutWall } from '../services/workouts'
-import session from '../services/session'
 export default {
-  data: ()=> ({
-    workouts: []
-  }),
-  async mounted(){
-    this.workouts = await GetWorkoutWall(session.user.handle)
-  },
+    props: {
+        workouts: Object,
+        newWorkout: Object
+    },
+    data(){
+        return {
+            workouts: this.newWorkout
+        }
+    },
+    watch: {
+        newWorkouts(){
+            // @ts-ignore
+            this.workouts = this.newWorkout;
+        }
+    }
 }
 </script>
-
-<style>
-.img {  
-    max-width: 20%;  
-    padding: 0px;
-    height: auto;  
-  }  
-
-  .header
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    padding: none;
-}
-
-  .search
-  {
-    overflow: hidden;
-    background-color: gainsboro;
-    padding: 5px;
-  }
-  .search input[type=text] {
-  float: right;
-  padding: 8px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-}
-
-
-.title
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
-.workout-image
-{
-    display:inline-block;
-    margin-right:5px;
-}
-</style>

@@ -9,13 +9,13 @@ Content-Type: application/json
         "firstName": "Jenna",
         "lastName": "Rodriguez",
         "handle": "@jenna",
-        "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMo3I5GL9_Zd_LULXRIXTzRLlVESBnoGp8sw&usqp=CAU",
+        "pic": "",
         "password": "hi",
         "isAdmin": true,
         "emails": [
-            "plotkinm@newpaltz.edu"
+            "rodriguj94@newpaltz.edu"
         ],
-        "following": [ { "handle": "@vp", "isApproved": true }, { "handle": "@johnsmith", "isApproved": true }]
+        "following": [ { "handle": "@vp", "isApproved": true }, { "handle": "@johnsmith", "isApproved": true }, { "handle": "@JewPaltz", "isApproved": true }]
     }
 
 ###
@@ -32,7 +32,7 @@ Content-Type: application/json
         "emails": [
             "plotkinm@newpaltz.edu"
         ],
-        "following": [ { "handle": "@vp", "isApproved": true }, { "handle": "@johnsmith", "isApproved": true }]
+        "following": [ { "handle": "@vp", "isApproved": true }, { "handle": "@johnsmith", "isApproved": true }, { "handle": "@jenna", "isApproved": true }, { "handle": "@janedoe", "isApproved": true }]
     }
 
 ###
@@ -109,7 +109,7 @@ POST http://localhost:3000/posts
 Content-Type: application/json
 
 { 
-        "src": "https://prodd8.planetfitness.com/sites/default/files/styles/gallery_full_image/public/club-photos/978/Manhattan__Tribeca___NY_photo_8_0.jpghttps://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.self.com%2Fstory%2Ftrainers-to-follow-instagram-actually-doable-at-home-workouts&psig=AOvVaw17J6L4d88L6bDseoUwc0bl&ust=1637907937218000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCODI-trwsvQCFQAAAAAdAAAAABAD",
+        "src": "https://media.timeout.com/images/105689091/image.jpg",
         "alt": "Planet Fitness",
         "caption": "At the gym...",
         "user_handle": "@johnsmith",
@@ -121,7 +121,7 @@ POST http://localhost:3000/posts
 Content-Type: application/json
 
 { 
-        "src": "https://media.guestofaguest.com/t_article_content/gofg-media/2020/04/1/53385/screen_shot_2020-04-16_at_12.05.29_pm.png",
+        "src": "https://media1.popsugar-assets.com/files/thumbor/oStCU38qB6hu1AHCJ5CyLBQ6TAY/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/02/27/986/n/1922729/6982a2275c7711f34ee2e8.35687035_/i/Why-Women-Work-Out.jpg",
         "alt": "Gym Day",
         "caption": "Gym Day!",
         "user_handle": "@janedoe",
@@ -162,4 +162,18 @@ Content-Type: application/json
         "caption": "Blink.",
         "user_handle": "@jenna",
         "isPublic": true
+}
+
+####################################################
+http://localhost:3000/workouts
+
+###
+POST http://localhost:3000/workouts
+Content-Type: application/json
+
+{
+    "workouts": "Bicep Curl",
+    "type": "Arms",
+    "calories": "100",
+    "pic": "https://image.shutterstock.com/image-vector/man-doing-standing-dumbbell-bicep-260nw-1850250391.jpg"
 }

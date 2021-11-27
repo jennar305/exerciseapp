@@ -15,7 +15,7 @@ const list = [
         isPublic: true,
     },
     { 
-        src: "https://media.guestofaguest.com/t_article_content/gofg-media/2020/04/1/53385/screen_shot_2020-04-16_at_12.05.29_pm.png",
+        src: "https://media1.popsugar-assets.com/files/thumbor/oStCU38qB6hu1AHCJ5CyLBQ6TAY/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/02/27/986/n/1922729/6982a2275c7711f34ee2e8.35687035_/i/Why-Women-Work-Out.jpg",
         alt: "Gym Day",
         caption: "Gym Day!",
         time: Date(),

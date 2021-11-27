@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-      <h1 class="title"> Feed Page </h1>
+      <h1 class="title"> Friends Feed </h1>
       
       <div class="columns">
         <div class="column is-half is-offset-one-quarter">
