@@ -5,6 +5,23 @@ POST http://localhost:3100/users/register
 Content-Type: application/json
 
     {
+        "firstName": "Jenna",
+        "lastName": "Rodriguez",
+        "handle": "@JennaR",
+        "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMo3I5GL9_Zd_LULXRIXTzRLlVESBnoGp8sw&usqp=CAU",
+        "password": "hi",
+        "isAdmin": true,
+        "emails": [
+            "plotkinm@newpaltz.edu"
+        ],
+        "following": [ { "handle": "@vp", "isApproved": true }, { "handle": "@johnsmith", "isApproved": true }]
+    }
+
+###
+POST http://localhost:3100/users/register
+Content-Type: application/json
+
+    {
         "firstName": "Moshe",
         "lastName": "Plotkin",
         "handle": "@JewPaltz",
@@ -68,45 +85,11 @@ Content-Type: application/json
         "following": [ { "handle": "@johnsmith", "isApproved": true } ]
     }
 
-###
-POST http://localhost:3100/users/login
-Content-Type: application/json
-
-    { 
-        "handle": "@potus",
-        "password": "password"
-    }
-
-###
-PATCH http://localhost:3100/users/6189d512e84c47b5a81dafe1
-Content-Type: application/json
-
-{
-    "firstName": "Joe 66"
-}
-
-###
-DELETE  http://localhost:3100/users/618a640f7e7f808f5d6290f4
-
-###
-POST http://localhost:3100/users/seed
 
 
 ####################################################
 http://localhost:3100/posts
 
-
-###
-http://localhost:3100/posts/618cac0f347b76cc068f980e
-
-###
-http://localhost:3100/posts/wall/@JewPaltz
-
-###
-http://localhost:3100/posts/feed/@JewPaltz
-
-###
-http://localhost:3100/posts/search?q=never
 
 ###
 POST http://localhost:3100/posts
@@ -119,16 +102,3 @@ Content-Type: application/json
     "user_handle": "@JewPaltz",
     "isPublic": true
 }
-###
-PATCH http://localhost:3100/posts/618cac0f347b76cc068f980e
-Content-Type: application/json
-
-{
-    "caption": "A Waterfall and the Milky Way G"
-}
-
-###
-DELETE  http://localhost:3100/posts/618cac0f347b76cc068f980e
-
-###
-POST http://localhost:3100/posts/seed
