@@ -9,7 +9,7 @@
                             <div class="field">
                             <label class="label">Profile Picture</label>
                             <div class="control">
-                              <input class="input" placeholder="Enter your username" v-model="user.pic">
+                              <input class="input" placeholder="Upload a profile picture" v-model="user.pic">
                             </div>
                         </div>
                     <div class="content">
@@ -78,10 +78,12 @@
 <script>
 import router from "../router";
 import { Add } from '../services/users';
+import Session from "../services/session";
 export default {
   data: ()=> ({
         user: [],
-        toRoute: '/login'
+        toRoute: '/login',
+        Session
     }),
     methods: {
         async signup(){
