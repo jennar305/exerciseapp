@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Session from '../services/session';
 import Home from '../views/Home.vue';
-//import Activity from '../views/Activity.vue';
 import Workouts from '../views/Workouts.vue';
 import Meals from '../views/Meals.vue';
 import Friends from '../views/Friends.vue';
 import Profile from '../views/Profile.vue';
+import Signup from '../views/SignUp.vue'
 
 const routes = [ 
     {
@@ -35,7 +35,12 @@ const routes = [
       path: '/profile',
       name: 'Profile',
       component: Profile,
-      //meta: { requiresLogin: true }
+      meta: { requiresLogin: true }
+    },
+    {
+      path: '/signup',
+      name: 'Sign Up',
+      component: Signup,
     },
     {
     path: '/users',

@@ -50,7 +50,7 @@
 <script>
 import LoginBadge from './LoginBadge';
 //import LogoutBadge from './LogoutBadge.vue'
-//import SignupBadge from './SignupBadge';
+
 
 export default {
     data(){

@@ -1,6 +1,6 @@
 <template>
     <div class="buttons" v-if="!Session.user">
-          <a class="button is-link">
+          <a class="button is-link" @click="signup">
             <strong>Sign up</strong>
           </a>
           <a class="button is-link" @click="login">
@@ -14,6 +14,7 @@
 
 <script>
 import Session from "../services/session";
+//import router from "../router";
 export default {
     data (){
         return ({ 
@@ -24,6 +25,9 @@ export default {
         login(){
             this.$router.push('/login');
             //this.Session.Login();
+        },
+        signup (){
+            this.$router.push('/signup')
         }
     },
     computed:{

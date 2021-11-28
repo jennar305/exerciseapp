@@ -12,23 +12,18 @@
                               <input class="input" placeholder="Enter your username" v-model="users.pic">
                             </div>
                         </div>
-                        
-
                         <div class="field">
                             <label class="label">Username: </label>
                             <div class="control">
                               <input class="input" placeholder="Enter your username" v-model="users.handle">
                             </div>
                           </div>
-
-                
                        <div class="field">
                         <label class="label">Bio: </label>
                         <div class="control">
                           <textarea class="textarea" placeholder="Tell us about yourself!" v-model="users.bio"></textarea>
                         </div>
                      </div>
-
                      <div class="field">
                     <div class="control">
                         <label class="radio">
@@ -41,7 +36,6 @@
                         </label>
                     </div>
                      </div>
-                        
                         <div class="field is-grouped">
                           <div class="control">
                             <button class="button is-link">Enter New Information</button>
