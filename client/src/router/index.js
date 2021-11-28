@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Session from '../services/session';
 import Home from '../views/Home.vue';
-import Activity from '../views/Activity.vue';
+//import Activity from '../views/Activity.vue';
 import Workouts from '../views/Workouts.vue';
 import Meals from '../views/Meals.vue';
 import Friends from '../views/Friends.vue';
@@ -12,12 +12,6 @@ const routes = [
         path: '/',
         name: 'Home',
         component: Home
-      },
-      {
-        path: '/activity',
-        name: 'Activity',
-        component: Activity,
-        meta: { requiresLogin: true }
       },
       {
         path: '/workouts',
@@ -41,16 +35,18 @@ const routes = [
       path: '/profile',
       name: 'Profile',
       component: Profile,
-      meta: { requiresLogin: true }
+      //meta: { requiresLogin: true }
     },
     {
     path: '/users',
     name: 'Users',
+    // @ts-ignore
     component: () => import(/* webpackChunkName: "admin" */ '../views/Users.vue')
     },
     {
       path: '/login',
       name: 'Login',
+      // @ts-ignore
       component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue')
     },
 ]

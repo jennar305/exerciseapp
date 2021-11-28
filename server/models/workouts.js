@@ -8,7 +8,7 @@ module.exports.collection = collection;
 
 const list = [
     { 
-        workouts: 'Bicep Curl',
+        BicepCurl: 'Bicep Curl',
         type: 'Arms',
         calories: '100',
         pic: 'https://image.shutterstock.com/image-vector/man-doing-standing-dumbbell-bicep-260nw-1850250391.jpg',

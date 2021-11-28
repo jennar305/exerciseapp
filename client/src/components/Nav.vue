@@ -17,10 +17,6 @@
       <router-link class="navbar-item is-tab" to="/" active-class="is-active">
         Home
       </router-link>
-       
-      <router-link class="navbar-item is-tab" to="/activity" active-class="is-active">
-        Activity
-      </router-link>
 
       <router-link class="navbar-item is-tab" to="/workouts" active-class="is-active">
         Workouts

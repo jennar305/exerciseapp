@@ -9,7 +9,7 @@
   </div>
 
 
-Your Daily Progress
+    Your Daily Progress
   <progress class="progress is-link" value="30" max="100">30%</progress>
 
   <br>

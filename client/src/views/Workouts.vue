@@ -7,25 +7,49 @@
     <button type="submit">Submit</button>
     <input type="text" placeholder="Search">
 </div>
+<br>
 
-<div class = "workout" v-for=" (w) in workouts" :key="w.src"> 
+<div>
+Your Weekly Progress:
+  <progress class="progress is-link" value="30" max="100">30%</progress>
 
-<workouts :new-workout="newWorkout" @add="add()" />
+  <br>
+
+  <div class="steps">
+    <article class="message">
+      <div class="message-header">
+        <p>Total Steps</p>
+        <button class="delete" aria-label="delete"></button>
+      </div>
+
+
+      <div class="message-body">
+       <img src="../assets/images/steps.png" width="50" height="50">
+       <h6 class = "title"> Steps </h6> 
+      </div>
+    </article>
+  </div>
+  </div>
+<br>
+<br>
+<!---<div class = "workout" v-for=" (w) in workouts" :key="w.src"> 
+
+<workouts :new-workout="newWorkout" @add="add()" /> --->
     <div class ="arms" > 
        <h3 class="title">Arms </h3> 
 
         <figure class="workout-image">
-            <img src="../assets/images/workouts/BicepCurl.png" width= "200px" length= "300px">
+           <!-- <img :src= "images.bicep" width= "200px" length= "300px"> -->
             <figcaption>Bicep Curl</figcaption>
           </figure>
         
-          <figure class="workout-image">
-            <img src="../assets/images/workouts/BenchPress.jpg" width= "200px" length= "300px">
+         <figure class="workout-image">
+            <img :src= "'https://thumbs.dreamstime.com/z/bench-press-exercise-chest-man-doing-workout-bench-press-exercise-chest-man-doing-workout-barbell-bodybuilder-157558597.jpg'" width= "200px" length= "300px">
             <figcaption>Bench Press</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/TricepExtension.png" width= "200px" length= "300px">
+            <img src= "@/assets/images/workouts/TricepExtension.png" width= "200px" length= "300px">
             <figcaption>Tricep Extension</figcaption>
           </figure>
 
@@ -88,6 +112,7 @@
             <img src="../assets/images/workouts/LateralRaise.jpg" width= "200px" length= "300px">
             <figcaption>Lateral Raise</figcaption>
           </figure>
+          
     </div>
     
     <br>
@@ -177,13 +202,11 @@
 
 </div>
 
-<br>
 
-</div> 
 </template>
 
 <script>
-
+/*
 import Workouts from '../services/workouts'
 import { GetWorkoutWall } from '../services/workouts'
 import session from '../services/session'
@@ -197,7 +220,9 @@ export default {
   async mounted(){
     this.workouts = await GetWorkoutWall(session.user.handle)
   },
-}
+} */
+
+
 </script>
 
 <style>
