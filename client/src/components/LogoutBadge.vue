@@ -1,4 +1,4 @@
-<template>
+<!----<template>
     <div class="buttons">
         <a class="button is-link" @click="logout">
             Log out
@@ -10,7 +10,6 @@
 export default {
     methods: {
         logout(){
-            // @ts-ignore
             this.$router.push('/');
         }
     }
@@ -18,4 +17,9 @@ export default {
 </script>
 
 <style>
+a {
+    margin-top:5px;
+    margin-right: 8px;
+}
 </style>
+--->

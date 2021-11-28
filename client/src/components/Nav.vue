@@ -41,9 +41,9 @@
 
     <div class="navbar-end">
       <div class="navbar-item">
+       <signup-badge />
         <login-badge />
-        <logout-badge />
-        <signup-badge />
+       <!-- <logout-badge /> --->
       </div>
     </div>
   </div>
@@ -53,8 +53,8 @@
 
 <script>
 import LoginBadge from './LoginBadge';
-import LogoutBadge from './LogoutBadge.vue'
-import SignupBadge from './SignupBadge';
+//import LogoutBadge from './LogoutBadge.vue'
+//import SignupBadge from './SignupBadge';
 
 export default {
     data(){
@@ -64,11 +64,15 @@ export default {
     },
     components: {
         LoginBadge,
-        LogoutBadge, 
-        SignupBadge
+        //LogoutBadge, 
+        //SignupBadge
     }
 }
 </script>
 
 <style>
+a {
+  margin-left: 5px;
+  margin-top: 3px;
+}
 </style>

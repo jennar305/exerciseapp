@@ -36,17 +36,22 @@ const routes = [
       name: 'Friends',
       component: Friends,
       meta: { requiresLogin: true }
-  },
-  {
-    path: '/profile',
-    name: 'Profile',
-    component: Profile,
-    meta: { requiresLogin: true }
-},
+    },
     {
-        path: '/login',
-        name: 'Login',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue')
+      path: '/profile',
+      name: 'Profile',
+      component: Profile,
+      meta: { requiresLogin: true }
+    },
+    {
+    path: '/users',
+    name: 'Users',
+    component: () => import(/* webpackChunkName: "admin" */ '../views/Users.vue')
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue')
     },
 ]
 

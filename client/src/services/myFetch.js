@@ -15,7 +15,7 @@ export async function api(url, data = null, method = null){
                 },
                 body: JSON.stringify(data) // body data type must match "Content-Type" header
               });
-        }else{
+        } else{
             response = await fetch(API_ROOT + url);
         }
         
