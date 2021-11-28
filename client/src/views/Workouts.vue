@@ -39,37 +39,37 @@ Your Weekly Progress:
        <h3 class="title">Arms </h3> 
 
         <figure class="workout-image">
-           <!-- <img :src= "images.bicep" width= "200px" length= "300px"> -->
+           <img src="https://bulma.io/images/placeholders/128x128.png"> 
             <figcaption>Bicep Curl</figcaption>
           </figure>
         
          <figure class="workout-image">
-            <img :src= "'https://thumbs.dreamstime.com/z/bench-press-exercise-chest-man-doing-workout-bench-press-exercise-chest-man-doing-workout-barbell-bodybuilder-157558597.jpg'" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Bench Press</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src= "@/assets/images/workouts/TricepExtension.png" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Tricep Extension</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/ReverseFly.webp" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Reverse Fly</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/PullUps.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Pull Ups</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/PushUps.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Push Ups</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/TricepDips.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Tricep Dips</figcaption>
           </figure>
     </div>
@@ -79,37 +79,37 @@ Your Weekly Progress:
     <div class ="back-and-shoulders"> 
         <h3 class="title">Back & Shoulders </h3>
         <figure class="workout-image">
-            <img src="../assets/images/workouts/LatPullDown.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Lat PullDown</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/ShoulderPress.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Shoulder Press</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/Shrugs.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Shoulder Shrugs</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/BackFly.webp" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Back Fly</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/Rows.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Rows</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/FrontRaise.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Front Raise</figcaption>
           </figure>
 
           <figure class="workout-image">
-            <img src="../assets/images/workouts/LateralRaise.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Lateral Raise</figcaption>
           </figure>
           
@@ -206,22 +206,6 @@ Your Weekly Progress:
 </template>
 
 <script>
-/*
-import Workouts from '../services/workouts'
-import { GetWorkoutWall } from '../services/workouts'
-import session from '../services/session'
-export default {
-  components: {
-        Workouts
-    },
-  data: ()=> ({
-    workouts: []
-  }),
-  async mounted(){
-    this.workouts = await GetWorkoutWall(session.user.handle)
-  },
-} */
-
 
 </script>
 

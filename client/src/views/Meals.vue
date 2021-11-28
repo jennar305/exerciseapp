@@ -23,62 +23,62 @@
        <h3 class="title"> Breakfast </h3> 
 
         <figure class="meal-image">
-            <img src="../assets/images/breakfast/AvocadoToast.webp" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Avocado Toast</figcaption>
           </figure>
         
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/FruitSmoothie.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Fruit Smoothie</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/OvernightChiaSeedOatmeal.webp" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Chia Seed Oatmeal</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/AcaiBowl.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Acai Bowl</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/HoneyAppleToast.webp" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Honey Apple Toast</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/SpinachandFetaBreakfastWrap.webp" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Breakfast Wrap</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/CinnamonPancakes.webp" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Cinnamon Pankcakes</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/OatmealPumpkin.webp" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Oatmeal Pumpmkin Muffins</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/BerryParfait.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Berry Yogurt Parfait</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/HashBrowns.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Sweet Potato Hashbrowns</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/EnglishMuffinPizzas.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>English Muffin Breakfast Pizzas</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/breakfast/BreakfastBananaSplit.webp" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Breakfast Banana Split</figcaption>
           </figure>
     </div>
@@ -89,62 +89,62 @@
     <div class ="lunch"> 
         <h3 class="title">Lunch</h3>
         <figure class="meal-image">
-            <img src="../assets/images/lunch/MediterraneanGrilledChicken.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Mediterranean Grilled Chicken Salad</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/PeaSoup.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Slow Cooker Split Pea Soup</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/ChickenWrap.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Asian Chicken Lettuce Wraps</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/AvocadoChickenSalad.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Avocado Chicken Salad</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/SpicySalmon.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Spicy Salmon Bowl</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/TunaMelt.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Tuna Melt Sandwich</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/EggSalad.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Egg Salad Sandwich</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/ZucchiniSushi.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Zucchini Sushi</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/ChickenBurger.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Chicken Burger</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/StrawberrySpinachSalad.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Strawberry Spinach Salad</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/ShrimpSalad.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Shrimp Salad Stuffed Avocado</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/lunch/ReubenWraps.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Reuben Wraps</figcaption>
           </figure>
     </div>
@@ -155,62 +155,62 @@
     <div class ="dinner"> 
         <h3 class="title"> Dinner </h3>
         <figure class="meal-image">
-            <img src="../assets/images/dinner/BlackBeanBurger.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Black Bean Burger</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/LemonChicken.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Lemon Chicken</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/PanFriedTilapia.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Pan-Fried Tilapia</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/ItalianSausageZucchini.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Italian Sausage Stuffed Zucchini</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/ChickenParmPepper.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Chicken Parm Stuffed Peppers</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/TuscanButterRoastChicken.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Tuscan Butter Roast Chicken</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/HoneyWalnutShrimp.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Honey Walnut Shrimp</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/ZucchiniLatticeLasagna.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Zucchini Lattice Lasagna</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/ChickenCasserole.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Chicken Casserole</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/CilantroLimeSalmonBowls.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Cilantro Lime Salmon Bowls</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/CapreseZoodles.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Caprese Zoodles</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dinner/CauliflowerGrilledCheese.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Cauliflower Grilled Cheese</figcaption>
           </figure>
     </div>
@@ -221,62 +221,62 @@
     <div class ="dessert"> 
         <h3 class="title"> Dessert </h3>
         <figure class="meal-image">
-            <img src="../assets/images/dessert/PeanutButterOatmealBars.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Peanut Butter Oatmeal Bars</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/ChocolatePudding.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Dark Chocolate Pudding</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/ChocolateCoveredBananas.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Chocolate Covered Bananas</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/OatmealCookies.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Oatmeal Cookies</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/ChocolateZucchiniCake.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Chocolate Zucchini Cake</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/ChickpeaCookieDough.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Chickpea Cookie Dough</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/RoastedPeaches.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Roasted Peaches</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/PumpkinMonsterCookies.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Pumpkin Monster Cookies</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/ChocolateHummus.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Chocolate Hummus</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/Cheesecake.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Greek Yogurt Cheesecake</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/AppleCake.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Apple Cake with Cream Cheese Frosting</figcaption>
           </figure>
 
           <figure class="meal-image">
-            <img src="../assets/images/dessert/PlumCrisp.jpg" width= "200px" length= "300px">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
             <figcaption>Plum Crisp</figcaption>
           </figure>
 </div>
