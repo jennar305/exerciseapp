@@ -4,8 +4,7 @@
 <br>
 <div class = "search"> 
     <h3 class="heading"> Workouts </h3>
-    <button type="submit">Submit</button>
-    <input type="text" placeholder="Search">
+
 </div>
 <br>
 

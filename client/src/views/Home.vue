@@ -9,12 +9,26 @@
   </div>
 
 
-    Your Daily Progress
+   <h4> Your Daily Progress </h4>
   <progress class="progress is-link" value="30" max="100">30%</progress>
 
   <br>
-  
-  <button class="button is-link">Add Workout</button>
+
+  <router-link class="button is-link" to="/workouts" active-class="is-active">
+        Add Workout
+      </router-link>
+
+      <br>
+      <br>
+      <br>
+      
+
+     <h4> Check out what your friends are up to today! </h4>
+
+      <router-link class="button is-link" to="/friends" active-class="is-active">
+       Friends Feed
+      </router-link>
+
   
 </div> 
 
@@ -43,3 +57,11 @@ export default {
 }
 
 </script>
+
+<style>
+h4 
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+</style>
