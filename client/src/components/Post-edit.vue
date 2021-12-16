@@ -8,6 +8,7 @@
                         <input class="input" type="url" placeholder="Input a URL to a picture" v-model="post.src" />
                     </div>
                 </div>
+
                 <div class="field">
                     <label class="label">Alt</label>
                     <div class="control">
@@ -23,14 +24,17 @@
                 </div>
 
                 <div class="field">
-                    <label class="label"> Tag a Friend </label>
+                    <label class="label">Tag A Friend </label>
                     <div class="control">
-                        <o-autocomplete rounded expanded v-model="name" :data="filteredDataArray" placeholder="friends" icon="search" clearable @select="option => selected = option">
-                            <template v-slot:empty> No results found </template>
-                        </o-autocomplete>
+                        <p class="content"><b>Selected:</b> {{ selected }}</p>
+                            <o-field label="Find your friends">
+                                 <o-autocomplete rounded expanded v-model="user.handle" :data="filteredDataArray" placeholder="e.g. @janedoe" icon="search" clearable @select="option => selected = option" >
+                                    <template v-slot:empty>No results found</template>
+                                 </o-autocomplete>
+                            </o-field>
                     </div>
                 </div>
-
+        
                 <div class="field">
                     <div class="control">
                         <label class="radio">
@@ -55,24 +59,28 @@
 </template>
 
 <script>
-
+import { GetAll } from "../services/users";
 export default {
     props: {
         newPost: Object
     },
     data(){
         return {
-            post: this.newPost,
-            data: ['Angular', 'Angular 2', 'Aurelia', 'Backbone', 'Ember', 'jQuery', 'Meteor', 'Node.js', 'Polymer', 'React', 'RxJS', 'Vue.js'],
+           post: this.newPost,
+            handle: ['Angular', 'Angular 2', 'Aurelia', 'Backbone', 'Ember', 'jQuery', 'Meteor', 'Node.js', 'Polymer', 'React', 'RxJS', 'Vue.js'],
             name: '',
-            selected: null
+            selected: null 
         }
     },
     watch: {
-        newPost(){
-            this.post = this.newPost;
-        }
+    newPost() {
+      this.post = this.newPost;
     },
+  },
+  async mounted() {
+    this.data = await GetAll();
+    console.log(this.data)
+  },
     computed: {
       filteredDataArray() {
         return this.$data.filter(option => {
@@ -80,7 +88,6 @@ export default {
             option
               .toString()
               .toLowerCase()
-              // @ts-ignore
               .indexOf(this.name.toLowerCase()) >= 0
           )
         })

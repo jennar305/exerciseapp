@@ -25,6 +25,9 @@
     <div class="content">
       {{post.caption}}
     </div>
+    <div class="content">
+      {{post.friends}}
+    </div>
   </div>
     <footer class="card-footer">
         <a href="#" class="card-footer-item">Like</a>

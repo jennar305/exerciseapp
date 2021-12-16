@@ -29,7 +29,7 @@ const routes = [
       path: '/friends',
       name: 'Friends',
       component: Friends,
-      //meta: { requiresLogin: true }
+      meta: { requiresLogin: true }
     },
     {
       path: '/profile',

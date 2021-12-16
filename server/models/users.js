@@ -162,3 +162,5 @@ module.exports.Seed = async ()=>{
         await module.exports.Add(x)
     }
 }
+
+module.exports.Search = q => collection.find({ handle: new RegExp(q,"i") }).toArray();
