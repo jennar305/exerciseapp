@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 import { Notification, Config } from '@oruga-ui/oruga-next'
 import '@oruga-ui/oruga-next/dist/oruga-full.css'
+import { Autocomplete } from '@oruga-ui/oruga-next'
 
 import App from './App.vue'
 import router from './router'
@@ -14,4 +15,5 @@ createApp(App)
     iconPack: 'fas'
 })
 .use(router)
+.use(Autocomplete)
 .mount('#app')

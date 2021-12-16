@@ -23,6 +23,15 @@
                 </div>
 
                 <div class="field">
+                    <label class="label"> Tag a Friend </label>
+                    <div class="control">
+                        <o-autocomplete rounded expanded v-model="name" :data="filteredDataArray" placeholder="friends" icon="search" clearable @select="option => selected = option">
+                            <template v-slot:empty> No results found </template>
+                        </o-autocomplete>
+                    </div>
+                </div>
+
+                <div class="field">
                     <div class="control">
                         <label class="radio">
                             <input type="radio" name="question" v-model="post.isPublic" :value="true" />
@@ -46,19 +55,36 @@
 </template>
 
 <script>
+
 export default {
     props: {
         newPost: Object
     },
     data(){
         return {
-            post: this.newPost
+            post: this.newPost,
+            data: ['Angular', 'Angular 2', 'Aurelia', 'Backbone', 'Ember', 'jQuery', 'Meteor', 'Node.js', 'Polymer', 'React', 'RxJS', 'Vue.js'],
+            name: '',
+            selected: null
         }
     },
     watch: {
         newPost(){
             this.post = this.newPost;
         }
+    },
+    computed: {
+      filteredDataArray() {
+        return this.$data.filter(option => {
+          return (
+            option
+              .toString()
+              .toLowerCase()
+              // @ts-ignore
+              .indexOf(this.name.toLowerCase()) >= 0
+          )
+        })
+      }
     }
 }
 </script>
